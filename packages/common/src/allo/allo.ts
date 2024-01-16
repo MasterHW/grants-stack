@@ -2,6 +2,8 @@ import { Hex } from "viem";
 import { AlloOperation } from "./operation";
 import { Result } from "./common";
 import { TransactionReceipt } from "./transaction-sender";
+import { RoundApplicationMetadata } from "../types";
+import { RoundApplicationAnswers } from "../types/roundApplication";
 
 /**
  * Represents the common interface for interacting with Allo contracts.
@@ -67,6 +69,22 @@ export interface Allo {
   updateProjectMetadata: (args: {
     projectId: Hex;
     metadata: Record<string, unknown>;
+  }) => AlloOperation<
+    Result<{ projectId: Hex }>,
+    {
+      ipfs: Result<string>;
+      transaction: Result<Hex>;
+      transactionStatus: Result<TransactionReceipt>;
+    }
+  >;
+
+  applyToRound: (args: {
+    projectId: Hex;
+    roundId: Hex; // address on v1, uint256 on v2
+    formInputs: RoundApplicationAnswers;
+    projectMetadata: Record<string | number, string | string[] | number>;
+    applicationMetadata: RoundApplicationMetadata;
+    chainName: string;
   }) => AlloOperation<
     Result<{ projectId: Hex }>,
     {

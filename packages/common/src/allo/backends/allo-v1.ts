@@ -11,6 +11,16 @@ import ProjectRegistryABI from "../abis/allo-v1/ProjectRegistry";
 import { IpfsUploader } from "../ipfs";
 import { WaitUntilIndexerSynced } from "../indexer";
 import { keccak256, encodePacked } from "viem";
+import { getProjectURIComponents } from "../../../../builder/src/utils/utils";
+import {
+  Project,
+  RoundApplication,
+  RoundApplicationMetadata,
+} from "../../types";
+import { metadataToProject } from "./allo-v1-utils";
+import { objectToDeterministicJSON } from "../../utils/deterministicJSON";
+import RoundApplicationBuilder from "./utils/RoundApplicationBuilder";
+import { RoundApplicationAnswers } from "../../types/roundApplication";
 
 function createProjectId(args: {
   chainId: number;
@@ -176,6 +186,64 @@ export class AlloV1 implements Allo {
 
       return success({
         projectId: args.projectId,
+      });
+    });
+  }
+
+  applyToRound(args: {
+    projectId: Hex;
+    roundId: Hex; // round address
+    formInputs: RoundApplicationAnswers;
+    projectMetadata: Record<string | number, string | string[] | number>;
+    applicationMetadata: RoundApplicationMetadata;
+    chainName: string;
+  }): AlloOperation<
+    Result<{ projectId: Hex }>,
+    {
+      ipfs: Result<string>;
+      transaction: Result<Hex>;
+      transactionStatus: Result<TransactionReceipt>;
+    }
+  > {
+    return new AlloOperation(async ({ emit }) => {
+      const {
+        id: projectNumber,
+        registryAddress: projectRegistryAddress,
+        chainId: projectChainId,
+      } = getProjectURIComponents(args.projectId);
+
+      if (!projectNumber || !projectRegistryAddress || !projectChainId) {
+        const result = new AlloError("Invalid project id");
+        emit("transactionStatus", error(result));
+        return error(result);
+      }
+
+      const project: Project = metadataToProject(args.projectMetadata, 0);
+
+      let application: RoundApplication;
+      let deterministicApplication: string;
+
+      try {
+        const builder = new RoundApplicationBuilder(
+          true,
+          project,
+          args.applicationMetadata,
+          args.roundId,
+          args.chainName
+        );
+
+        application = await builder.build(args.roundId, formInputs);
+
+        deterministicApplication = objectToDeterministicJSON(
+          application as any
+        );
+      } catch (error) {
+        // error handling
+        return;
+      }
+
+      return success({
+        projectId: "0x",
       });
     });
   }

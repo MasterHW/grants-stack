@@ -16,6 +16,8 @@ import {
   CreateProfileArgs,
 } from "@allo-team/allo-v2-sdk/dist/types";
 import { Registry } from "@allo-team/allo-v2-sdk/";
+import { RoundApplication, RoundApplicationMetadata } from "../../types";
+import { RoundApplicationAnswers } from "../../types/roundApplication";
 
 export class AlloV2 implements Allo {
   private transactionSender: TransactionSender;
@@ -188,6 +190,28 @@ export class AlloV2 implements Allo {
 
       return success({
         projectId: projectId,
+      });
+    });
+  }
+
+  applyToRound(args: {
+    projectId: Hex;
+    roundId: Hex;
+    formInputs: RoundApplicationAnswers;
+    projectMetadata: Record<string | number, string | string[] | number>;
+    applicationMetadata: RoundApplicationMetadata;
+    chainName: string;
+  }): AlloOperation<
+    Result<{ projectId: Hex }>,
+    {
+      ipfs: Result<string>;
+      transaction: Result<Hex>;
+      transactionStatus: Result<TransactionReceipt>;
+    }
+  > {
+    return new AlloOperation(async ({ emit }) => {
+      return success({
+        projectId: "0x",
       });
     });
   }

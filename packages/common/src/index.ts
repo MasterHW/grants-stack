@@ -411,3 +411,6 @@ export {
   waitForSubgraphSyncTo,
   getCurrentSubgraphBlockNumber,
 } from "./allo/indexer";
+
+export * from "./types";
+export * from "./allo/backends/allo-v1-utils";
