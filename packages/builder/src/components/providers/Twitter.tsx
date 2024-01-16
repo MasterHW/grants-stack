@@ -5,7 +5,7 @@ import { QuestionMarkCircleIcon } from "@heroicons/react/24/solid";
 import { shallowEqual, useDispatch, useSelector } from "react-redux";
 import { global } from "../../global";
 import { RootState } from "../../reducers";
-import { CredentialProvider } from "../../types";
+import { CredentialProvider } from "common/src/allo/types/index";
 import Button, { ButtonVariants } from "../base/Button";
 import {
   fetchAuthUrl,

@@ -6,7 +6,7 @@ import { ROUND_PAYOUT_DIRECT, ROUND_PAYOUT_MERKLE } from "common";
 import { RootState } from "../../../reducers";
 import { Application, AppStatus } from "../../../reducers/projects";
 import { roundApplicationPathForProject } from "../../../routes";
-import { Round, RoundDisplayType } from "../../../types";
+import { Round, RoundDisplayType } from "common/src/allo/types/index";
 import { formatDateFromSecs, isInfinite } from "../../../utils/components";
 import generateUniqueRoundApplicationID from "../../../utils/roundApplication";
 import { getProjectURIComponents } from "../../../utils/utils";

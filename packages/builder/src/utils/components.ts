@@ -1,5 +1,5 @@
 import { getConfig } from "common/src/config";
-import { Metadata, Project } from "../types";
+import { Metadata, Project } from "common/src/allo/types/index";
 import PinataClient from "../services/pinata";
 import { DefaultProjectBanner, DefaultProjectLogo } from "../assets";
 

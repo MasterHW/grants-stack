@@ -3,7 +3,7 @@ import { ethers } from "ethers";
 import {
   RoundApplicationMetadata,
   RoundApplicationQuestion,
-} from "../types/roundApplication";
+} from "common/src/types/roundApplication";
 
 const generateUniqueRoundApplicationID = (
   projectChainId: ChainId,

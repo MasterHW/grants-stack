@@ -5,7 +5,7 @@ import { useNetwork } from "wagmi";
 import { ValidationError } from "yup";
 import { metadataImageSaved, metadataSaved } from "../../actions/projectForm";
 import { RootState } from "../../reducers";
-import { ChangeHandlers, ProjectFormStatus } from "../../types";
+import { ChangeHandlers, ProjectFormStatus } from "common/src/allo/types/index";
 import { Select, TextArea, TextInput, WebsiteInput } from "../grants/inputs";
 import Button, { ButtonVariants } from "./Button";
 import ExitModal from "./ExitModal";

@@ -8,7 +8,7 @@ import { formReset } from "../../actions/projectForm";
 import { RootState } from "../../reducers";
 import { Status } from "../../reducers/newGrant";
 import { slugs } from "../../routes";
-import { ProjectFormStatus } from "../../types";
+import { ProjectFormStatus } from "common/src/allo/types/index";
 import Details from "../grants/Details";
 import Button, { ButtonVariants } from "./Button";
 import { addAlert } from "../../actions/ui";

@@ -1,4 +1,4 @@
-import { FormInputs, ProjectCredentials } from "../types";
+import { FormInputs, ProjectCredentials } from "common/src/allo/types/index";
 
 export const METADATA_SAVED = "METADATA_SAVED";
 export const METADATA_IMAGE_SAVED = "METADATA_IMAGE_SAVED";

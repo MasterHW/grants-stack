@@ -11,7 +11,7 @@ import {
 import { RootState } from "../../reducers";
 import { Status as GrantsMetadataStatus } from "../../reducers/grantsMetadata";
 import colors from "../../styles/colors";
-import { ProjectFormStatus } from "../../types";
+import { ProjectFormStatus } from "common/src/allo/types/index";
 import { networkPrettyName } from "../../utils/wallet";
 import Button, { ButtonVariants } from "../base/Button";
 import ExitModal from "../base/ExitModal";

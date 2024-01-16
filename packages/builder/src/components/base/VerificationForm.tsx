@@ -5,7 +5,7 @@ import { metadataSaved } from "../../actions/projectForm";
 import { GithubLogo, TwitterLogo } from "../../assets";
 import { XCircle } from "../../assets/icons";
 import { RootState } from "../../reducers";
-import { ChangeHandlers, ProjectFormStatus } from "../../types";
+import { ChangeHandlers, ProjectFormStatus } from "common/src/allo/types/index";
 import { TextInput } from "../grants/inputs";
 import Github from "../providers/Github";
 import Twitter from "../providers/Twitter";

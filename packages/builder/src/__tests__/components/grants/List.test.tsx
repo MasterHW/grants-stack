@@ -11,7 +11,7 @@ import useLocalStorage from "../../../hooks/useLocalStorage";
 import { RootState } from "../../../reducers";
 import { ApplicationModalStatus } from "../../../reducers/roundApplication";
 import setupStore from "../../../store";
-import { Metadata, ProjectEventsMap } from "../../../types";
+import { Metadata, ProjectEventsMap } from "common/src/allo/types/index";
 import {
   addressFrom,
   buildRound,

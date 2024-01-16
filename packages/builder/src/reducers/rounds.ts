@@ -5,7 +5,7 @@ import {
   ROUNDS_ROUND_LOADED,
   ROUNDS_UNLOADED,
 } from "../actions/rounds";
-import { Round } from "../types";
+import { Round } from "common/src/allo/types/index";
 
 export const enum Status {
   Undefined = 0,

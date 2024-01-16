@@ -8,7 +8,7 @@ import {
   InputProps,
   ProjectOption,
   TextAreaProps,
-} from "../../types";
+} from "common/src/allo/types/index";
 import { getAddressType } from "../../utils/utils";
 
 const optionalSpan = (

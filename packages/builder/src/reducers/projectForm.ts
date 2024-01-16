@@ -5,7 +5,7 @@ import {
   FORM_RESET,
   ProjectFormActions,
 } from "../actions/projectForm";
-import { FormInputs, ProjectCredentials } from "../types";
+import { FormInputs, ProjectCredentials } from "common/src/allo/types/index";
 
 export interface ProjectFormState {
   metadata: FormInputs;

@@ -1,4 +1,4 @@
-import { Alert } from "../types/alert";
+import { Alert } from "common/src/types/alert";
 import { UI_ALERT_ADDED, UI_ALERT_REMOVED, UIActions } from "../actions/ui";
 
 export type UIState = {

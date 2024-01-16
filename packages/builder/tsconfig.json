@@ -17,5 +17,11 @@
     "jsx": "react-jsx",
     "sourceMap": true
   },
-  "include": ["src", "craco.config.js"]
+  "include": [
+    "src",
+    "craco.config.js",
+    "../common/src/utils/deterministicJSON.ts",
+    "../common/src/allo/backends/utils/RoundApplicationBuilder.ts",
+    "../common/src/types"
+  ]
 }

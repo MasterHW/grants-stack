@@ -6,8 +6,8 @@ import { Provider } from "react-redux";
 import { ethers } from "ethers";
 import history from "../history";
 import setupStore from "../store";
-import { FormInputs, Metadata, Round } from "../types";
-import { Alert } from "../types/alert";
+import { FormInputs, Metadata, Round } from "common/src/allo/types/index";
+import { Alert } from "common/src/types/alert";
 
 export function addressFrom(n: number): string {
   const bn = ethers.BigNumber.from(n);

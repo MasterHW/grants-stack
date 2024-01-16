@@ -6,7 +6,7 @@ import {
   GRANT_METADATA_LOADING,
   GRANT_METADATA_LOADING_URI,
 } from "../actions/grantsMetadata";
-import { Metadata } from "../types";
+import { Metadata } from "common/src/allo/types/index";
 
 export const enum Status {
   Undefined = 0,

@@ -1,5 +1,5 @@
 import classNames from "classnames";
-import { InputProps } from "../../types";
+import { InputProps } from "common/src/allo/types/index";
 import { Feedback, getStyleInfoForFeedback } from "./inputs";
 
 type RadioInputProps = InputProps & {

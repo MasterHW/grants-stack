@@ -1,7 +1,7 @@
 import { Button } from "@chakra-ui/react";
 import { ArrowTopRightOnSquareIcon } from "@heroicons/react/24/solid";
 import { AppStatus } from "../../../reducers/projects";
-import { RoundDisplayType } from "../../../types";
+import { RoundDisplayType } from "common/src/allo/types/index";
 
 export type LinkProps = {
   displayType?: RoundDisplayType;

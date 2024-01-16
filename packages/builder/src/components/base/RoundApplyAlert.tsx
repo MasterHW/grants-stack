@@ -1,6 +1,6 @@
 import { Button } from "@chakra-ui/react";
 import { InformationCircleIcon } from "@heroicons/react/24/solid";
-import { Round } from "../../types";
+import { Round } from "common/src/allo/types/index";
 
 interface RoundApplyAlertProps {
   show: boolean;

@@ -6,7 +6,7 @@ import { RootState } from "../reducers";
 import ProjectRegistryABI from "../contracts/abis/ProjectRegistry.json";
 import PinataClient from "../services/pinata";
 import { LocalStorage } from "../services/Storage";
-import { Metadata, ProjectRegistryMetadata } from "../types";
+import { Metadata, ProjectRegistryMetadata } from "common/src/allo/types/index";
 import { getProjectURIComponents, getProviderByChainId } from "../utils/utils";
 
 export const GRANT_METADATA_LOADING_URI = "GRANT_METADATA_LOADING_URI";

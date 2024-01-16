@@ -1,5 +1,5 @@
 import { DefaultProjectBanner, DefaultProjectLogo } from "../../assets";
-import { Metadata, Project } from "../../types";
+import { Metadata, Project } from "common/src/allo/types/index";
 import { getProjectImage, ImgTypes } from "../../utils/components";
 
 function Section({ title, text }: { title: string; text: string | undefined }) {

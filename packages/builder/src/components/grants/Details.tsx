@@ -4,7 +4,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { useParams } from "react-router-dom";
 import { fetchProjectApplications } from "../../actions/projects";
 import { RootState } from "../../reducers";
-import { FormInputs, Metadata, Project } from "../../types";
+import { FormInputs, Metadata, Project } from "common/src/allo/types/index";
 import About from "./About";
 import ProjectDetailsHeader from "./ProjectDetailsHeader";
 import Rounds from "./rounds/Rounds";

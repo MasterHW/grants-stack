@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { useDispatch } from "react-redux";
 import { CheckCircleIcon } from "@heroicons/react/24/solid";
 import { removeAlertDelayed } from "../../actions/ui";
-import { Alert } from "../../types/alert";
+import { Alert } from "common/src/types/alert";
 
 type AlertProps = {
   alert: Alert;

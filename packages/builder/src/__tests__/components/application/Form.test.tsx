@@ -5,7 +5,11 @@ import * as projects from "../../../actions/projects";
 import { web3ChainIDLoaded } from "../../../actions/web3";
 import Form from "../../../components/application/Form";
 import setupStore from "../../../store";
-import { Metadata, Round, RoundApplicationMetadata } from "../../../types";
+import {
+  Metadata,
+  Round,
+  RoundApplicationMetadata,
+} from "common/src/allo/types/index";
 import { addressFrom, renderWrapped } from "../../../utils/test_utils";
 import * as utils from "../../../utils/utils";
 

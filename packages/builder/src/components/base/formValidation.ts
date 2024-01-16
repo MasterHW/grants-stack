@@ -1,9 +1,9 @@
 import { array, object, string, number } from "yup";
-import { FormInputs } from "../../types";
+import { FormInputs } from "common/src/allo/types/index";
 import {
   RoundApplicationAnswers,
   RoundApplicationQuestion,
-} from "../../types/roundApplication";
+} from "common/src/types/roundApplication";
 
 const urlRegex =
   /^(?:https?:\/\/)?(?:www\.)?[A-Za-z0-9]+\.[A-Za-z]{2,}(?:\/.*)?$/;

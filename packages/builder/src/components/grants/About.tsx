@@ -11,7 +11,7 @@ import {
   FormInputs,
   Metadata,
   Project,
-} from "../../types";
+} from "common/src/allo/types/index";
 import { formatDateFromMs } from "../../utils/components";
 import Calendar from "../icons/Calendar";
 import LinkIcon from "../icons/LinkIcon";

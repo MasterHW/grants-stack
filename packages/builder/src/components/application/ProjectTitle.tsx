@@ -1,4 +1,4 @@
-import { Metadata } from "../../types";
+import { Metadata } from "common/src/allo/types/index";
 
 export function ProjectTitle(props: { projectMetadata: Metadata }) {
   const { projectMetadata } = props;

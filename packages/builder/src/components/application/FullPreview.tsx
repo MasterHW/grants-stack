@@ -1,8 +1,11 @@
 import { useEffect } from "react";
 import { EyeIcon } from "@heroicons/react/24/solid";
 import { ChainId, renderToHTML } from "common";
-import { Metadata, RoundApplicationQuestion } from "../../types";
-import { RoundApplicationAnswers } from "../../types/roundApplication";
+import {
+  Metadata,
+  RoundApplicationQuestion,
+} from "common/src/allo/types/index";
+import { RoundApplicationAnswers } from "common/src/types/roundApplication";
 import { DefaultProjectBanner, DefaultProjectLogo } from "../../assets";
 import Button, { ButtonVariants } from "../base/Button";
 import { AboutProject } from "./AboutProject";

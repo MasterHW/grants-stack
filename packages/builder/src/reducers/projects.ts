@@ -13,7 +13,7 @@ import {
   PROJECT_STATS_LOADED,
   PROJECT_STATS_LOADING,
 } from "../actions/projects";
-import { ProjectEventsMap } from "../types";
+import { ProjectEventsMap } from "common/src/allo/types/index";
 
 export enum Status {
   Undefined = 0,

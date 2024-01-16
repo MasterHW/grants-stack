@@ -7,7 +7,7 @@ import { ethers } from "ethers";
 import { RootState } from "../reducers";
 import { NewGrant, Status } from "../reducers/newGrant";
 import PinataClient from "../services/pinata";
-import { Project } from "../types/index";
+import { Project } from "common/src/allo/types/index";
 import { getProjectURIComponents } from "../utils/utils";
 
 export const NEW_GRANT_STATUS = "NEW_GRANT_STATUS";

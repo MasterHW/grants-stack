@@ -10,9 +10,14 @@ import RoundABI from "../contracts/abis/RoundImplementation.json";
 import { RootState } from "../reducers";
 import { PayoutStrategy, Status } from "../reducers/rounds";
 import PinataClient from "../services/pinata";
-import { MetaPtr, ProgramMetadata, Round, RoundMetadata } from "../types";
+import {
+  MetaPtr,
+  ProgramMetadata,
+  Round,
+  RoundMetadata,
+} from "common/src/allo/types/index";
 import { getProviderByChainId } from "../utils/utils";
-import { RoundApplicationMetadata } from "../types/roundApplication";
+import { RoundApplicationMetadata } from "common/src/types/roundApplication";
 import { parseRoundApplicationMetadata } from "../utils/roundApplication";
 
 export const ROUNDS_LOADING_ROUND = "ROUNDS_LOADING_ROUND";

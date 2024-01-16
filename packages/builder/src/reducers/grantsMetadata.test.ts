@@ -4,7 +4,7 @@ import {
   grantMetadataLoading,
   grantMetadataLoadingURI,
 } from "../actions/grantsMetadata";
-import { Metadata } from "../types";
+import { Metadata } from "common/src/allo/types/index";
 import { grantsMetadataReducer, Status } from "./grantsMetadata";
 
 const grantId = "1:1:1";

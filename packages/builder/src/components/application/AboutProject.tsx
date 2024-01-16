@@ -1,8 +1,11 @@
 import { useEnsName } from "wagmi";
 import { GlobeAltIcon } from "@heroicons/react/24/solid";
 import { ChainId } from "common";
-import { Metadata, RoundApplicationQuestion } from "../../types";
-import { RoundApplicationAnswers } from "../../types/roundApplication";
+import {
+  Metadata,
+  RoundApplicationQuestion,
+} from "common/src/allo/types/index";
+import { RoundApplicationAnswers } from "common/src/types/roundApplication";
 import useValidateCredential from "../../hooks/useValidateCredential";
 import { getPayoutIcon } from "../../utils/wallet";
 import Calendar from "../icons/Calendar";

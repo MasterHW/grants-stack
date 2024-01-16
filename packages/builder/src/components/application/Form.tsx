@@ -21,11 +21,11 @@ import {
   Metadata,
   ProjectOption,
   Round,
-} from "../../types";
+} from "common/src/allo/types/index";
 import {
   RoundApplicationAnswers,
   RoundApplicationMetadata,
-} from "../../types/roundApplication";
+} from "common/src/types/roundApplication";
 import {
   ROUND_PAYOUT_DIRECT,
   getProjectURIComponents,

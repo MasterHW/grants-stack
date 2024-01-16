@@ -6,7 +6,7 @@ import ProjectForm from "../base/ProjectForm";
 import Cross from "../icons/Cross";
 import ExitModal from "../base/ExitModal";
 import VerificationForm from "../base/VerificationForm";
-import { ProjectFormStatus } from "../../types";
+import { ProjectFormStatus } from "common/src/allo/types/index";
 import Preview from "../base/Preview";
 import { formReset } from "../../actions/projectForm";
 import NetworkForm from "../base/NetworkForm";

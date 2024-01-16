@@ -6,7 +6,11 @@ import { loadRound } from "../../actions/rounds";
 import { RootState } from "../../reducers";
 import { AppStatus } from "../../reducers/projects";
 import { roundApplicationViewPath } from "../../routes";
-import { Round, RoundSupport, ApplicationCardType } from "../../types";
+import {
+  Round,
+  RoundSupport,
+  ApplicationCardType,
+} from "common/src/allo/types/index";
 import { formatDateFromSecs, isInfinite } from "../../utils/components";
 import { getNetworkIcon, networkPrettyName } from "../../utils/wallet";
 import { PayoutStrategy } from "../../reducers/rounds";

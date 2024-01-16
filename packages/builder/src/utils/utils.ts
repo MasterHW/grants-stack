@@ -1,9 +1,9 @@
 import { datadogLogs } from "@datadog/browser-logs";
 import { datadogRum } from "@datadog/browser-rum";
 import { BigNumberish, ethers } from "ethers";
-import { ChainId } from "common";
+import { ChainId, Project } from "common";
 import { global } from "../global";
-import { AddressType, Metadata, Project } from "../types";
+import { AddressType, Metadata } from "common/src/allo/types/index";
 import gnosisABI from "../contracts/abis/gnosis.json";
 
 export const ROUND_PAYOUT_MERKLE = "MERKLE";

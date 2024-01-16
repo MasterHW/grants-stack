@@ -15,8 +15,8 @@ import {
 import { Status as RoundStatus } from "../../reducers/rounds";
 import { grantsPath, projectPath, roundPath } from "../../routes";
 import colors from "../../styles/colors";
-import { Round } from "../../types";
-import { RoundApplicationAnswers } from "../../types/roundApplication";
+import { Round } from "common/src/allo/types/index";
+import { RoundApplicationAnswers } from "common/src/types/roundApplication";
 import { applicationSteps } from "../../utils/steps";
 import {
   ROUND_PAYOUT_DIRECT,

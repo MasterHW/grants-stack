@@ -9,11 +9,15 @@ import { global } from "../global";
 import { RootState } from "../reducers";
 import { Status } from "../reducers/roundApplication";
 import PinataClient from "../services/pinata";
-import { Project, RoundApplication, SignedRoundApplication } from "../types";
-import { RoundApplicationAnswers } from "../types/roundApplication";
-import { objectToDeterministicJSON } from "../utils/deterministicJSON";
+import {
+  Project,
+  RoundApplication,
+  SignedRoundApplication,
+} from "common/src/allo/types/index";
+import { RoundApplicationAnswers } from "common/src/types/roundApplication";
+import { objectToDeterministicJSON } from "common/src/utils/deterministicJSON";
 import generateUniqueRoundApplicationID from "../utils/roundApplication";
-import RoundApplicationBuilder from "../utils/RoundApplicationBuilder";
+import RoundApplicationBuilder from "common/src/allo/backends/utils/RoundApplicationBuilder";
 import { getProjectURIComponents, metadataToProject } from "../utils/utils";
 import { fetchProjectApplications } from "./projects";
 import { graphqlFetch } from "../utils/graphql";
@@ -256,6 +260,7 @@ export const submitApplication =
       return;
     }
 
+    // todo: =======================================
     const { signer } = global;
 
     const hash = ethers.utils.solidityKeccak256(

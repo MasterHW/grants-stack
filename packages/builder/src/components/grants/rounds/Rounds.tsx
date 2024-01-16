@@ -4,7 +4,7 @@ import { useParams } from "react-router-dom";
 import { RootState } from "../../../reducers";
 import { Application } from "../../../reducers/projects";
 import { Status } from "../../../reducers/rounds";
-import { RoundDisplayType } from "../../../types";
+import { RoundDisplayType } from "common/src/allo/types/index";
 import RoundListItem from "./RoundListItem";
 import { isInfinite } from "../../../utils/components";
 

@@ -1,5 +1,5 @@
 import { Dispatch } from "redux";
-import { Alert, AlertTypes, newAlert } from "../types/alert";
+import { Alert, AlertTypes, newAlert } from "common/src/types/alert";
 
 export const UI_ALERT_ADDED = "UI_ALERT_ADDED";
 export interface UIAlertAddedAction {

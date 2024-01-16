@@ -9,7 +9,7 @@ import setupStore from "../../../store";
 import { renderWrapped } from "../../../utils/test_utils";
 import { web3ChainIDLoaded } from "../../../actions/web3";
 import { RootState } from "../../../reducers";
-import { ProjectFormStatus } from "../../../types";
+import { ProjectFormStatus } from "common/src/allo/types/index";
 
 const chains = [mainnet];
 

@@ -16,7 +16,7 @@ import Form from "../application/Form";
 import ErrorModal from "../base/ErrorModal";
 import LoadingSpinner from "../base/LoadingSpinner";
 import Cross from "../icons/Cross";
-import { RoundApplicationAnswers } from "../../types/roundApplication";
+import { RoundApplicationAnswers } from "common/src/types/roundApplication";
 import { isInfinite } from "../../utils/components";
 import { ROUND_PAYOUT_DIRECT } from "../../utils/utils";
 

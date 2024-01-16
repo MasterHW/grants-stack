@@ -1,5 +1,5 @@
-import RoundApplicationBuilder from "../../utils/RoundApplicationBuilder";
-import { RoundApplicationMetadata, Project } from "../../types";
+import RoundApplicationBuilder from "common/src/allo/backends/utils/RoundApplicationBuilder";
+import { RoundApplicationMetadata, Project } from "common/src/allo/types/index";
 import Lit from "../../services/lit";
 
 jest.mock("../../services/lit");

@@ -2,7 +2,7 @@ import { useState } from "react";
 import { shallowEqual, useSelector } from "react-redux";
 import { useSwitchNetwork } from "wagmi";
 import { RootState } from "../../reducers";
-import { ChangeHandlers, ProjectFormStatus } from "../../types";
+import { ChangeHandlers, ProjectFormStatus } from "common/src/allo/types/index";
 import { Select } from "../grants/inputs";
 import Button, { ButtonVariants } from "./Button";
 import NetworkSwitchModal from "./NetworkSwitchModal";
